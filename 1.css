@@ -1,0 +1,95 @@
+.gua-hide {
+    display: none;
+}
+.gua-menu-content {
+    height: 100px;
+    border: 1px solid red;
+}
+.gua-item {
+    /*display: inline-block;*/
+    /*opacity: 0.6;*/
+    filter: grayscale(100%);
+}
+.gua-item.gua-highlight {
+    filter: initial;
+    /*opacity: 1;*/
+}
+.gua-item.gua-highlight img {
+    width: 150px;
+    height: 150px;
+}
+img {
+    /*transition 这个 css 指定了某个属性发生变化的时候自动使用动画效果和动画时间*/
+    transition: width 1s, height 1s;
+}
+.gua-item img {
+    width: 100px;
+    height: 100px;
+}
+
+/*3. 轮播图*/
+.gua-slide {
+    position: relative;
+    width: 590px;
+}
+.gua-slide-image {
+    display: none;
+}
+/*gua-slide-image*/
+.gua-active {
+    display: inline-block;
+}
+.gua-slide-button {
+    right: 0;
+    height: 50px;
+    width: 30px;
+
+    color: #fff;
+    background: black;
+    opacity: 0.3;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+/* 去掉边框，用焦点 */
+.gua-slide-button:focus {
+    outline: none;
+}
+
+.gua-slide-button.gua-left {
+    left: 0;
+}
+.gua-slide-button.gua-right {
+    right: 0;
+}
+/*垂直居中*/
+.gua-vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* 水平居中套路 */
+.gua-slide-indicators {
+    position: absolute;
+
+    /* 相对于父元素的位置*/
+    left: 50%;
+
+    /*自身的位置*/
+    transform: translateX(-50%);
+
+    bottom: 10px;
+}
+.gua-slide-indi {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: red;
+}
+.gua-white {
+    background: white;
+}
