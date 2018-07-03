@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="1.css">
+    </head>
+    <body>
+        <!-- 轮播图 -->
+        <div class="gua-3">
+            <!-- data-imgs 是图片的总数 -->
+            <!-- data-active 是当前显示的图片的下标 -->
+            <div class="gua-slide" data-imgs="3" data-active="0">
+                <img id="id-guaimage-0" class="gua-slide-image gua-active" src="slideimages/4.jpg" alt="">
+                <img id="id-guaimage-1" class="gua-slide-image" src="slideimages/5.jpg" alt="">
+                <img id="id-guaimage-2" class="gua-slide-image" src="slideimages/6.jpg" alt="">
+                <button class="gua-slide-button gua-left gua-vertical-center" data-offset="-1">&lt;</button>
+                <button class="gua-slide-button gua-right gua-vertical-center" data-offset="1">&gt;</button>
+                <div class="gua-slide-indicators">
+                    <div id="id-indi-0" class="gua-slide-indi gua-white"
+                        data-index="0"></div>
+                    <div id="id-indi-1" class="gua-slide-indi"
+                        data-index="1"></div>
+                    <div id="id-indi-2" class="gua-slide-indi"
+                        data-index="2"></div>
+                </div>
+            </div>
+        </div>
+        <script src="tools.js"></script>
+        <script src="1.js"></script>
+    </body>
+</html>
